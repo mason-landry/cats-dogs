@@ -13,24 +13,24 @@ class PetNet:
     def build():
         # initialize the model
         model = Sequential()
-        inputShape = (100,100,3)
+        inputShape = (200,200,3)
 
         # # softmax classifier
         # model.add(Dense(classes))
         # model.add(Activation("softmax"))
         
 
-        model.add(Conv2D(16, (3, 3), activation='relu', kernel_initializer='he_uniform', padding='same', input_shape=inputShape))
-        model.add(MaxPooling2D((2, 2)))
-        model.add(Dropout(0.2))
-        model.add(Conv2D(32, (3, 3), activation='relu', kernel_initializer='he_uniform', padding='same'))
+        model.add(Conv2D(32, (3, 3), activation='relu', kernel_initializer='he_uniform', padding='same', input_shape=inputShape))
         model.add(MaxPooling2D((2, 2)))
         model.add(Dropout(0.2))
         model.add(Conv2D(64, (3, 3), activation='relu', kernel_initializer='he_uniform', padding='same'))
         model.add(MaxPooling2D((2, 2)))
         model.add(Dropout(0.2))
+        model.add(Conv2D(128, (3, 3), activation='relu', kernel_initializer='he_uniform', padding='same'))
+        model.add(MaxPooling2D((2, 2)))
+        model.add(Dropout(0.2))
         model.add(Flatten())
-        model.add(Dense(256, activation='relu', kernel_initializer='he_uniform'))
+        model.add(Dense(512, activation='relu', kernel_initializer='he_uniform'))
         model.add(Dense(1, activation='sigmoid'))
 
         # model = Sequential()
