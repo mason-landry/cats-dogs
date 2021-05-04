@@ -6,6 +6,7 @@ I used the resulting model to determine if my cat would be identified as a cat. 
 https://towardsdatascience.com/is-my-cat-really-a-dog-7fa13c921625
 
 Download the data from Kaggle:
+https://www.kaggle.com/c/dogs-vs-cats
 
 Steps to train your own model:
 
