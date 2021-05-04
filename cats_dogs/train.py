@@ -40,7 +40,7 @@ if __name__ == "__main__":
     image_size = (200,200)
 
     train_ds, val_ds = load_data(train_data, batch_size=batch_size, image_size=image_size)
-    model = PetNet.build()
+    model = PetNet.build((200,200,3))
 
     model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 

@@ -6,7 +6,7 @@ I used the resulting model to determine if my cat would be identified as a cat. 
 https://towardsdatascience.com/is-my-cat-really-a-dog-7fa13c921625
 
 Download the data from Kaggle:
-https://www.kaggle.com/c/dogs-vs-cats
+ttps://www.kaggle.com/c/dogs-vs-cats
 
 Steps to train your own model:
 
@@ -15,7 +15,7 @@ Steps to train your own model:
 /
 * data
 * cats_dogs
-
+* sort.py
 
 2. Run `sort.py` to sort training data into `cat` and `dog` folders
 3. Run `train.py`, or adjust image_size, batch_size, model parameters, etc. first.
