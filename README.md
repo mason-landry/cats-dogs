@@ -11,18 +11,10 @@ Steps to train your own model:
 
 1. Set up file structure properly:
 
-|data
-|   --train
-|   --test
+/
+* data
+* cats_dogs
 
-|cats_dogs
-|   --__init__.py
-|   --fussel_test.py
-|   --load_data.py
-|   --model_test.py
-|   --model.py
-|   --train.py
-|   --sort.py
 
 2. Run `sort.py` to sort training data into `cat` and `dog` folders
 3. Run `train.py`, or adjust image_size, batch_size, model parameters, etc. first.
